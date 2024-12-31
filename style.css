@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.digital_clock {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.week {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.week div {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.week div:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.time {
+    font-size: 3em;
+}
+
+.dot {
+    font-size: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .time {
+        font-size: 2em;
+    }
+}
